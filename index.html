@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiggaTube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="niggaico.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .video-list {
+            padding: 20px;
+        }
+        .video-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .thumbnail {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .video-details {
+            margin-left: 20px;
+        }
+        .video-details h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .video-details p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .video-details .uploader,
+        .video-details .date {
+            color: grey;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="niggatubelogo.png" alt="Logo">
+        <h1>NiggaTube</h1>
+    </header>
+    <div class="video-list">
+        <div class="video-item">
+            <img src="thumbnails/video1.jpg" alt="Video 1 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Example Video 1</h2>
+                <p class="uploader">Uploaded by: User123</p>
+                <p class="description">This is a description for Example Video 1.</p>
+                <p class="date">Uploaded on: October 1, 2024</p>
+            </div>
+        </div>
+        <div class="video-item">
+            <img src="thumbnails/video2.jpg" alt="Video 2 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Example Video 2</h2>
+                <p class="uploader">Uploaded by: User456</p>
+                <p class="description">This is a description for Example Video 2.</p>
+                <p class="date">Uploaded on: October 5, 2024</p>
+            </div>
+        </div>
+        <div class="video-item">
+            <img src="thumbnails/video3.jpg" alt="Video 3 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Example Video 3</h2>
+                <p class="uploader">Uploaded by: User789</p>
+                <p class="description">This is a description for Example Video 3.</p>
+                <p class="date">Uploaded on: October 10, 2024</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 NiggaTube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
