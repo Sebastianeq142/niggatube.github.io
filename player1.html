@@ -6,7 +6,7 @@
     <title>NiggaTube</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="niggaico.ico" type="image/x-icon">
-<style>
+    <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -38,8 +38,10 @@
         .video-player {
             width: 100%;
             max-width: 800px;
+            max-height: calc(100vh - 200px); /* Ensure video does not exceed viewport height minus header and footer */
             margin: 20px 0;
             cursor: pointer;
+            object-fit: contain;
         }
         .video-details {
             text-align: center;
@@ -87,7 +89,7 @@
         <h1>NiggaTube</h1>
     </header>
     <div class="video-container">
-        <video class="video-player" controls>
+        <video class="video-player" controls onclick="redirectToMainPage()">
             <source src="48TJ2T0.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
