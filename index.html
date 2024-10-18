@@ -15,79 +15,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="niggaico.ico" type="image/x-icon">
     <style>
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #e0e0e0;
-}
-header {
-    background-color: #ff0000;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-header img {
-    height: 50px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.video-list {
-    padding: 20px;
-    margin: 0 auto;  /* Centering the video list */
-}
-.video-item {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    background-color: #1f1f1f;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-decoration: none;
-    color: inherit;
-}
-.video-item:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-.thumbnail {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-}
-.video-details {
-    margin-left: 20px;
-}
-.video-details h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #e0e0e0;
-}
-.video-details p {
-    margin: 5px 0;
-    color: #b0b0b0;
-}
-.video-details .uploader,
-.video-details .date {
-    color: #8c8c8c;
-    font-size: 14px;
-}
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 60px; /* Add padding to avoid overlap with footer */
+        }
+        .video-player {
+            width: 100%;
+            max-width: 800px;
+            max-height: calc(100vh - 200px); /* Ensure video does not exceed viewport height minus header and footer */
+            margin: 20px 0;
+            cursor: pointer;
+            object-fit: contain;
+        }
+        .video-details {
+            text-align: center;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+        .video-details h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #e0e0e0;
+        }
+        .video-details p {
+            margin: 5px 0;
+            color: #b0b0b0;
+        }
+        .video-details .uploader,
+        .video-details .date {
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
 a {
     text-decoration: none;
     color: inherit;
@@ -103,8 +109,12 @@ a {
 </head>
 <body>
     <header>
+        <a href="index.html">
+            <div class="header-content">
         <img src="niggatubelogo.png" alt="Logo" onclick="redirectToMainPage()">
-        <a href="index.html"><h1>NiggaTube</h1></a>
+        <h1>NiggaTube</h1>
+            </div>
+        </a>
     </header>
     <div class="video-list">
         <a href="player1.html" class="video-item">
