@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta property="og:title" content="NiggaTube - Nice man gives out presents">
+    <meta property="og:title" content="niggaTube - Nice man gives out presents">
     <meta property="og:description" content="miły pan rozdaje prezenty ale słodkie">
     <meta property="og:image" content="https://niggatube.pl/video1.png">
     <meta property="og:url" content="https://niggatube.pl/">
 
     <!-- Optional Tags for Better Control -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="NiggaTube">
+    <meta property="og:site_name" content="niggaTube">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NiggaTube</title>
+    <title>niggaTube</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="niggaico.ico" type="image/x-icon">
     <style>
+        /* Your existing styles are included here */
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -74,7 +75,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 800px;
-            margin-bottom: 20px; /* Add margin at the bottom */
+            margin-bottom: 20px;
         }
         .video-details h2 {
             font-family: 'Montserrat', sans-serif;
@@ -91,14 +92,69 @@
             color: #8c8c8c;
             font-size: 15px;
         }
-        footer {
-            background-color: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
+
+        /* Comment Section Styling */
+        .comment-section {
             width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #1f1f1f;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+        .comment-section h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .comment-form textarea {
+            resize: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: none;
+            outline: none;
+            height: 80px;
+        }
+        .comment-form button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #FF4500;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .comment-form button:hover {
+            background-color: #e04000;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            background-color: #2a2a2a;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            animation: fadeIn 0.5s ease-out;
+        }
+        .comment p {
+            margin: 0;
+            color: #c0c0c0;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
         @media screen and (max-width: 600px) {
             header h1 {
                 font-size: 16px;
@@ -109,8 +165,26 @@
         }
     </style>
     <script>
-        function redirectToMainPage() {
-            window.location.href = 'index.html';
+        // Function to add a comment to the comment section
+        function addComment() {
+            const commentInput = document.getElementById('comment-input');
+            const commentText = commentInput.value.trim();
+
+            if (commentText === "") return; // Exit if input is empty
+
+            // Create a new comment element
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment');
+            const commentContent = document.createElement('p');
+            commentContent.textContent = commentText;
+            newComment.appendChild(commentContent);
+
+            // Add the comment to the comments section
+            const commentsContainer = document.getElementById('comments-container');
+            commentsContainer.appendChild(newComment);
+
+            // Clear the input field
+            commentInput.value = "";
         }
     </script>
 </head>
@@ -118,7 +192,7 @@
     <header>
         <a href="index.html">
             <img src="niggatubelogo.png" alt="Logo">
-            <h1>NiggaTube</h1>
+            <h1>niggaTube</h1>
         </a>
     </header>
     <div class="video-container">
@@ -133,8 +207,33 @@
             <p class="date">Uploaded on: October 18, 2024</p>
         </div>
     </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h3>Comments</h3>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://nieratga.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
     <footer>
-        <p>© 2024 NiggaTube. All rights reserved.</p>
+        <p>© 2024 niggaTube. All rights reserved.</p>
     </footer>
 </body>
 </html>
