@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="NiggaTube - dżentelmen w samolocie życzy wszystkim miłej podróży">
+    <meta property="og:description" content="prawdziwy król na pokładzie">
+    <meta property="og:image" content="https://niggatube.pl/video4.png">
+    <meta property="og:url" content="https://niggatube.pl/">
+
+    <!-- Optional Tags for Better Control -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NiggaTube">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiggaTube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="niggaico.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 60px; /* Add padding to avoid overlap with footer */
+        }
+        .video-player {
+            width: 100%;
+            max-width: 800px;
+            max-height: calc(100vh - 200px); /* Ensure video does not exceed viewport height minus header and footer */
+            margin: 20px 0;
+            cursor: pointer;
+            object-fit: contain;
+        }
+        .video-details {
+            text-align: center;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+        .video-details h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #e0e0e0;
+        }
+        .video-details p {
+            margin: 5px 0;
+            color: #b0b0b0;
+        }
+        .video-details .uploader,
+        .video-details .date {
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #0f0f0f;
+            color: white;
+            text-align: center;
+            padding: 0px 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script>
+        function redirectToMainPage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="niggatubelogo.png" alt="Logo" onclick="redirectToMainPage()">
+        <h1>NiggaTube</h1>
+    </header>
+    <div class="video-container">
+        <video class="video-player" controls>
+            <source src="burgerking.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-details">
+            <h2>dżentelmen w samolocie życzy wszystkim miłej podróży</h2>
+            <p class="uploader">Uploaded by: qwentim </p>
+            <p class="description">prawdziwy król na pokładzie</p>
+            <p class="date">Uploaded on: October 25, 2024</p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 NiggaTube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
