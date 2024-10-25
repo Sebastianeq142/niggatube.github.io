@@ -32,6 +32,12 @@
             justify-content: left;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        header a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
         header img {
             height: 40px;
             margin-right: 15px;
@@ -110,8 +116,10 @@
 </head>
 <body>
     <header>
-        <img src="niggatubelogo.png" alt="Logo" onclick="redirectToMainPage()">
-        <h1>NiggaTube</h1>
+        <a href="index.html">
+            <img src="niggatubelogo.png" alt="Logo">
+            <h1>NiggaTube</h1>
+        </a>
     </header>
     <div class="video-container">
         <video class="video-player" controls>
