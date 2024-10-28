@@ -53,6 +53,24 @@
             font-size: 28px;
             margin: 0;
             font-weight: 700;
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-button {
+            background-color: #242424;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .nav-button:hover {
+            background-color: #383838;
+        }
         }
         .video-container {
             display: flex;
@@ -205,6 +223,10 @@
             <img src="niggatubelogo.png" alt="Logo">
             <h1>NiggaTube</h1>
         </a>
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-button">Videos</a>
+            <a href="games.html" class="nav-button">Games</a>
+        </div>
     </header>
     <div class="video-container">
         <video class="video-player" controls>
