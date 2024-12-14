@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="NiggaTube">
+    <meta property="og:description" content="NiggaTube - The new way of sharing racist content.">
+    <meta property="og:image" content="https://niggatube.pl/niggatubelogo.png">
+    <meta property="og:url" content="https://niggatube.pl/">
+
+    <!-- Optional Tags for Better Control -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NiggaTube">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiggaTube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="niggaico.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+        header {
+            background-color: #FF4500;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 40px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            margin: 0;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-button {
+            background-color: #242424;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .nav-button:hover {
+            background-color: #383838;
+        }
+        .video-list {
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-item {
+            background-color: #242424;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        .video-details {
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+        }
+        .video-details h2 {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .video-details p {
+            font-family: 'Roboto', sans-serif;
+            margin: 5px 0;
+            color: #b0b0b0;
+        }
+        .uploader,
+        .date {
+            color: #909090;
+            font-size: 14px;
+        }
+        footer {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <script>
+        function redirectToMainPage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="niggatubelogo.png" alt="Logo">
+            <h1>NiggaTube</h1>
+        </a>
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-button">Videos</a>
+            <a href="games.html" class="nav-button">Games</a>
+        </div>
+    </header>
+    <div class="video-list">
+        <a href="player1.html" class="video-item">
+            <img src="video1.png" alt="Video 1 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Nice man gives out presents</h2>
+                <p class="uploader">Uploaded by: Sebastianeq142</p>
+                <p class="description">miły pan rozdaje prezenty ale słodkie.</p>
+                <p class="date">Uploaded on: October 18, 2024</p>
+            </div>
+        </a>
+        <a href="player2.html" class="video-item">
+            <img src="video2.png" alt="Video 2 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>uprzejmy pan rozdaje wszystkim darmową amunicję do broni</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">za darmo to uczciwa cena, prawda??</p>
+                <p class="date">Uploaded on: October 24, 2024</p>
+            </div>
+        </a>
+        <a href="player3.html" class="video-item">
+            <img src="video3.png" alt="Video 3 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>dzielny ukraiński żołnierz broni swojej ojczyzny</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">dzięki takim bohaterom ukraina istnieje</p>
+                <p class="date">Uploaded on: October 25, 2024</p>
+            </div>
+        </a>
+        <a href="player4.html" class="video-item">
+            <img src="video4.png" alt="Video 4 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>dżentelmen w samolocie życzy wszystkim miłej podróży</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">prawdziwy król na pokładzie</p>
+                <p class="date">Uploaded on: October 25, 2024</p>
+            </div>
+        </a>
+        <a href="player5.html" class="video-item">
+            <img src="video5.png" alt="Video 5 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Jazda w porsche głowy nie urywa</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">911 to nie tylko wieże i samoloty</p>
+                <p class="date">Uploaded on: October 29, 2024</p>
+            </div>
+        </a>
+        <a href="player6.html" class="video-item">
+            <img src="video6.png" alt="Video 6 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Piercing IV</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">najlepszy enchant na taką broń</p>
+                <p class="date">Uploaded on: October 31, 2024</p>
+            </div>
+        </a>
+        <a href="player7.html" class="video-item">
+            <img src="video7.png" alt="Video 7 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>tramwajek daje całusa ludziom</h2>
+                <p class="uploader">Uploaded by: Sebastianeq142</p>
+                <p class="description">tramwajek daje całusa ludziom ale słodkie</p>
+                <p class="date">Uploaded on: November 03, 2024</p>
+            </div>
+        </a>
+        <a href="player8.html" class="video-item">
+            <img src="video8.png" alt="Video 8 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>pracownik dostaje darmową ammunicje od kartelu</h2>
+                <p class="uploader">Uploaded by: Sebastianeq142</p>
+                <p class="description">pracownik dostaje darmową ammunicje od kartelu</p>
+                <p class="date">Uploaded on: November 03, 2024</p>
+            </div>
+        </a>
+        <a href="player9.html" class="video-item">
+            <img src="video9.png" alt="Video 9 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>RKO na pierwszym miejscu</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">warto pomagać</p>
+                <p class="date">Uploaded on: November 06, 2024</p>
+            </div>
+        </a>
+        <a href="player10.html" class="video-item">
+            <img src="video10.png" alt="Video 10 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>hitler przestrzeliwuje se reke</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">każdemu sie mogło zdarzyć</p>
+                <p class="date">Uploaded on: November 06, 2024</p>
+            </div>
+        </a>
+        <a href="player11.html" class="video-item">
+            <img src="video11.png" alt="Video 11 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Powrót króla samolotu</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">kto by nie chciał go spotkać?</p>
+                <p class="date">Uploaded on: November 20, 2024</p>
+            </div>
+        <a href="player12.html" class="video-item">
+            <img src="video12.png" alt="Video 12 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Zadowolony pan wraca do salonu by podziękować za samochód</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">uprzejmość jest bardzo ważna</p>
+                <p class="date">Uploaded on: December 14, 2024</p>
+            </div>
+        </a>
+        <a href="player13.html" class="video-item">
+            <img src="video13.png" alt="Video 13 Thumbnail" class="thumbnail">
+            <div class="video-details">
+                <h2>Miły polak uczy jak korzystać z broni palnej</h2>
+                <p class="uploader">Uploaded by: qwentim</p>
+                <p class="description">nauka to priorytet!</p>
+                <p class="date">Uploaded on: December 14, 2024</p>
+            </div>
+        </a>
+    </div>
+    <footer>
+        <p>© 2024 NiggaTube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
